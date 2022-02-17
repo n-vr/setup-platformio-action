@@ -1,0 +1,22 @@
+name: Test action
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out repo
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Use the local action
+      - name: Setup PlatformIO
+        uses: ./
+        
+      # Check if pio command works
+      - name: Check pio command
+        run: pio --help
