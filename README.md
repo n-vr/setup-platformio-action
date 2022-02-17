@@ -28,4 +28,4 @@ Specify the PlatformIO to set up. Use semantic versioning (e.g. "5.2.5", "5.2" o
 Distributed under the MIT license. See [LICENSE.md](LICENSE.md) for more information.
 
 # Acknowledgements
-- [PlatformIO](https://docs.platformio.org/en/stable/integration/ci/github-actions.html)
+- [PlatformIO](https://platformio.org/)
