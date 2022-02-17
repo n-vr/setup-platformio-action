@@ -10,6 +10,7 @@ runs:
   steps:
     - uses: actions/setup-python@v2
     - run: pip install platformio==${{ inputs.platformio-version }}
+      shell: bash
 
 branding:
   icon: "play"
