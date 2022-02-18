@@ -3,7 +3,7 @@ description: "Set up platformIO and add pio to PATH"
 inputs:
   platformio-version:
     description: "PlatformIO version to use. (e.g. 5.2.5, 5.2 or 5"
-    default: "5"
+    default: "newest"
     
 runs:
   using: "composite"
@@ -11,10 +11,10 @@ runs:
     - uses: actions/setup-python@v2
     - run: pip install platformio
       shell: bash
-      if: ${{ inputs.platformio == null }}
+      if: ${{ inputs.platformio-version == 'newest' }}
     - run: pip install platformio==${{ inputs.platformio-version }}
       shell: bash
-      if: ${{ inputs.platformio != null }}
+      if: ${{ inputs.platformio-version != 'newest' }}
 
 branding:
   icon: "play"
