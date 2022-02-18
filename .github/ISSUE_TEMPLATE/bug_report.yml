@@ -1,5 +1,5 @@
 name: Bug report
-about: Create a report to help us improve
+description: Create a report to help us improve
 title: ":bug: Bug report: <title>"
 labels: bug
 assignees:
@@ -22,21 +22,23 @@ body:
   - type: textarea
     attributes:
       label: Current Behavior
-      description: A concise description of what you're experiencing.
+      description: Describe the current behavior
+      placeholder: A clear concise description of what you're experiencing.
     validations:
       required: false
 
   - type: textarea
     attributes:
       label: Expected Behavior
-      description: A concise description of what you expected to happen.
+      description: Describe the expected behavior
+      placeholder: A clear concise description of what you expected to happen.
     validations:
       required: false
 
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      description: Steps to reproduce the behavior
       placeholder: |
         1. Change this file '...'
         2. Run the action
@@ -46,7 +48,7 @@ body:
 
   - type: input
     attributes:
-      label: Version
+      label: Action version
       description: What version of the action are you using?
       placeholder: e.g. v1.0.0
     validations:
@@ -54,7 +56,7 @@ body:
 
   - type: input
     attributes:
-      label: Version
+      label: PlatformIO version
       description: What version of PlatformIO did you specify?
       placeholder: e.g. newest or v5.2.5
     validations:
