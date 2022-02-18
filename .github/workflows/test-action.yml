@@ -5,7 +5,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-without-version:
+    name: Build without version
     runs-on: ubuntu-latest
 
     steps:
@@ -14,9 +15,29 @@ jobs:
         uses: actions/checkout@v2
 
       # Use the local action
-      - name: Setup PlatformIO
+      - name: Setup PlatformIO (without version)
         uses: ./
         
       # Check if pio command works
       - name: Check pio command
         run: pio --help
+        
+  build-with-version:
+    name: Build with version
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out repo
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Use the local action
+      - name: Setup PlatformIO (with version)
+        uses: ./
+        with:
+          platformio-version: "5.2.5"
+        
+      # Check if pio command works
+      - name: Check pio command
+        run: pio --help
+        

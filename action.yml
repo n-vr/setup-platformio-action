@@ -9,8 +9,12 @@ runs:
   using: "composite"
   steps:
     - uses: actions/setup-python@v2
+    - run: pip install platformio
+      shell: bash
+      if: ${{ inputs.platformio == null }}
     - run: pip install platformio==${{ inputs.platformio-version }}
       shell: bash
+      if: ${{ inputs.platformio != null }}
 
 branding:
   icon: "play"
