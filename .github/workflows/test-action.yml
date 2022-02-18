@@ -3,6 +3,8 @@ name: Test action
 on:
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - '**.md'
 
 jobs:
   build-without-version:
