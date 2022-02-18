@@ -1,5 +1,5 @@
 name: "Setup PlatformIO"
-description: "Set up platformIO and add pio to PATH"
+description: "Set up platformIO Core and add pio to PATH"
 inputs:
   platformio-version:
     description: "PlatformIO version to use. (e.g. 5.2.5, 5.2 or 5"
@@ -17,5 +17,5 @@ runs:
       if: ${{ inputs.platformio-version != 'newest' }}
 
 branding:
-  icon: "play"
+  icon: "terminal"
   color: "orange"
