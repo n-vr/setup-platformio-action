@@ -1,7 +1,7 @@
 # Setup PlatformIO
 [![Test action](https://github.com/n-vr/setup-platformio-action/actions/workflows/test-action.yml/badge.svg)](https://github.com/n-vr/setup-platformio-action/actions/workflows/test-action.yml)
 
-This actions sets up PlatformIO for use in actions.
+This actions sets up PlatformIO for use in actions.asdasdasd
 
 # Usage
 
