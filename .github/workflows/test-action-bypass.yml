@@ -1,0 +1,24 @@
+name: Test action
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**.md'
+
+jobs:
+  build-without-version:
+    name: Build without version
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bypass this workflow
+      - run: 'echo "No build required" '
+        
+  build-with-version:
+    name: Build with version
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bypass this workflow
+      - run: 'echo "No build required" '
