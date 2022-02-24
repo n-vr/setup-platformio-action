@@ -3,15 +3,15 @@
 
 This actions sets up PlatformIO for use in actions.
 
-# Usage
+## Usage
 
-## Use newest PlatformIO version
+### Use newest PlatformIO version
 ```yaml
 - name: Setup PlatformIO
   uses: n-vr/setup-platformio-action@v1
 ```
 
-## Specify the version of PlatformIO you want to use
+### Specify the version of PlatformIO you want to use
 ```yaml
 - name: Setup PlatformIO
   uses: n-vr/setup-platformio-action@v1
@@ -19,7 +19,7 @@ This actions sets up PlatformIO for use in actions.
     platformio-version: "5.2"
 ```
 
-## Example workflow file
+### Example workflow file
 > To use this example, create a `.github/workflows/build-platformio.yml` file in your repository and paste the contents below in it.
 
 ```yaml
@@ -48,14 +48,14 @@ jobs:
         run: pio run
 ```
 
-## Inputs
+### Inputs
 > Use the `with` keyword to specify these inputs
 
-### `platformio-version` (optional)
+#### `platformio-version` (optional)
 Specify the PlatformIO to set up. Use semantic versioning (e.g. "5.2.5", "5.2" or "5"). If no version is specified, the newest version is used.
 
-# License
+## License
 Distributed under the MIT license. See [LICENSE.md](LICENSE.md) for more information.
 
-# Acknowledgements
+## Acknowledgements
 - [PlatformIO](https://platformio.org/)
