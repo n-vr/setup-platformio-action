@@ -19,8 +19,10 @@ This actions sets up PlatformIO for use in actions.
     platformio-version: "5.2"
 ```
 
+> See [inputs](#platformio-version-optional) for more info.
+
 ### Example workflow file
-> To use this example, create a `.github/workflows/build-platformio.yml` file in your repository and paste the contents below in it.
+To use this example, create a `.github/workflows/build-platformio.yml` file in your repository and paste the contents below in it.
 
 ```yaml
 name: Build PlatformIO project
@@ -49,7 +51,7 @@ jobs:
 ```
 
 ### Inputs
-> Use the `with` keyword to specify these inputs
+Use the `with` keyword to specify these inputs
 
 #### `platformio-version` (optional)
 Specify the PlatformIO to set up. Use semantic versioning (e.g. "5.2.5", "5.2" or "5"). If no version is specified, the newest version is used.
